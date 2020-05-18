@@ -1,0 +1,33 @@
+public class IntervalAnalysis.Tester extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        IntervalAnalysis.Tester this;
+
+        this := @this: IntervalAnalysis.Tester;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public void check()
+    {
+        IntervalAnalysis.Tester this;
+        byte x, y;
+        int x;
+
+        this := @this: IntervalAnalysis.Tester;
+        x = 10;
+        y = 20;
+        x = x + 1;
+        goto label1;
+
+     label0:
+        x = x + 1;
+
+     label1:
+        if x < 100 goto label0;
+
+        return;
+    }
+}

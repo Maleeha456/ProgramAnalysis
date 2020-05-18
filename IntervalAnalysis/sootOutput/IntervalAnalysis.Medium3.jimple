@@ -1,0 +1,54 @@
+public class IntervalAnalysis.Medium3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        IntervalAnalysis.Medium3 this;
+
+        this := @this: IntervalAnalysis.Medium3;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        java.util.Scanner $r0, sc;
+        java.io.InputStream $r1;
+        int input, y, x;
+        byte x;
+
+        args := @parameter0: java.lang.String[];
+        $r0 = new java.util.Scanner;
+        $r1 = <java.lang.System: java.io.InputStream in>;
+        specialinvoke $r0.<java.util.Scanner: void <init>(java.io.InputStream)>($r1);
+        sc = $r0;
+        input = virtualinvoke sc.<java.util.Scanner: int nextInt()>();
+        y = 0;
+        x = 7;
+        x = x + 1;
+        goto label1;
+
+     label0:
+        x = 7;
+        x = x + 1;
+        y = y + 1;
+
+     label1:
+        if input > y goto label0;
+
+        if x <= 5 goto label2;
+
+        y = y * -2;
+        x = x + -2;
+        goto label3;
+
+     label2:
+        x = 8;
+        x = x + -1;
+        x = x + 1;
+
+     label3:
+        return;
+    }
+}

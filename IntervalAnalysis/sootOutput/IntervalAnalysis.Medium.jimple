@@ -1,0 +1,45 @@
+public class IntervalAnalysis.Medium extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        IntervalAnalysis.Medium this;
+
+        this := @this: IntervalAnalysis.Medium;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int x;
+        java.io.PrintStream $r0;
+
+        args := @parameter0: java.lang.String[];
+        x = 19;
+        goto label1;
+
+     label0:
+        x = x + 5;
+
+     label1:
+        if x < 100 goto label0;
+
+        if x <= 30 goto label2;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void print(int)>(x);
+        x = x + -6;
+        goto label3;
+
+     label2:
+        x = x + 1;
+        x = x + -10;
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void print(java.lang.String)>("Invalids");
+
+     label3:
+        return;
+    }
+}

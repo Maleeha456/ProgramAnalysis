@@ -1,0 +1,41 @@
+public class IntervalAnalysis.Test1 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        IntervalAnalysis.Test1 this;
+
+        this := @this: IntervalAnalysis.Test1;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void abc(int)
+    {
+        int n, x;
+        java.io.PrintStream $r0;
+
+        n := @parameter0: int;
+        x = 2;
+        goto label1;
+
+     label0:
+        x = x + 1;
+
+     label1:
+        if x < 1000 goto label0;
+
+        if x >= 20 goto label2;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(x);
+        goto label3;
+
+     label2:
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Invalid");
+
+     label3:
+        return;
+    }
+}

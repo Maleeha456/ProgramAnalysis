@@ -1,0 +1,54 @@
+public class IntervalAnalysis.Hard extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        IntervalAnalysis.Hard this;
+
+        this := @this: IntervalAnalysis.Hard;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        byte b, c, d, a;
+        int $i0, b, c, a, d;
+
+        args := @parameter0: java.lang.String[];
+        b = 10;
+        c = 0;
+        d = 1;
+        a = 7;
+        if a <= 0 goto label2;
+
+        $i0 = a % 2;
+        if $i0 != 0 goto label0;
+
+        b = b + 1;
+        c = d * 2;
+        goto label3;
+
+     label0:
+        $i0 = a % 3;
+        if $i0 != 0 goto label1;
+
+        b = 11;
+        b = b * -1;
+        b = b * 1;
+        a = a / 3;
+        goto label3;
+
+     label1:
+        d = b * 5;
+        goto label3;
+
+     label2:
+        b = b + 1;
+        c = c + 1;
+
+     label3:
+        return;
+    }
+}
